@@ -1,22 +1,5 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /*background-color: #F0F8FF;*/
-    background-color: white;
-    font-family: 'PT Serif', serif;
 }
-
-
-
-.navbar-brand {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.text-content {
-    align-items: center;
-    padding-top: 30%;
-}
-
-
