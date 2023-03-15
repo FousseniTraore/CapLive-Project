@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.options button {
+  margin-bottom: 10px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+}
+
+.display div {
+  margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+          <button id="compare-btn">Compare</button>
+          <button id="view-btn">View Only</button>
+        </div>
+        <div class="display">
+          <div id="compare-form" style="display: none;">
+            <input type="text" id="country1-input" placeholder="Enter Country 1">
+            <input type="text" id="country2-input" placeholder="Enter Country 2">
+            <button id="compare-submit">Compare</button>
+          </div>
+          <div id="view-form" style="display: none;">
+            <input type="text" id="country-input" placeholder="Enter Country Name">
+            <button id="view-submit">View</button>
+          </div>
+        </div>
+      </div>
+      <script>
+        const compareBtn = document.getElementById('compare-btn');
+const viewBtn = document.getElementById('view-btn');
+const compareForm = document.getElementById('compare-form');
+const viewForm = document.getElementById('view-form');
+const country1Input = document.getElementById('country1-input');
+const country2Input = document.getElementById('country2-input');
+const countryInput = document.getElementById('country-input');
+const compareSubmitBtn = document.getElementById('compare-submit');
+const viewSubmitBtn = document.getElementById('view-submit');
+
+compareBtn.addEventListener('click', function() {
+  compareForm.style.display = 'block';
+  viewForm.style.display = 'none';
+});
+
+viewBtn.addEventListener('click', function() {
+  compareForm.style.display = 'none';
+  viewForm.style.display = 'block';
+});
+
+compareSubmitBtn.addEventListener('click', function() {
+  const country1 = country1Input.value;
+  const country2 = country2Input.value;
+  // Code to compare cost of living between the two countries
+});
+
+viewSubmitBtn.addEventListener('click', function() {
+  const country = countryInput.value;
+  // Code to display cost of living for the given country
+});
+
+      </script>
+      
+</body>
+</html>
