@@ -30,6 +30,9 @@
   margin-bottom: 10px;
 }
 
+.display div input{
+  max-height: 190px;
+}
     </style>
 </head>
 <body>
@@ -52,14 +55,14 @@
       </div>
       <script>
         const compareBtn = document.getElementById('compare-btn');
-const viewBtn = document.getElementById('view-btn');
-const compareForm = document.getElementById('compare-form');
-const viewForm = document.getElementById('view-form');
-const country1Input = document.getElementById('country1-input');
-const country2Input = document.getElementById('country2-input');
-const countryInput = document.getElementById('country-input');
-const compareSubmitBtn = document.getElementById('compare-submit');
-const viewSubmitBtn = document.getElementById('view-submit');
+        const viewBtn = document.getElementById('view-btn');
+        const compareForm = document.getElementById('compare-form');
+        const viewForm = document.getElementById('view-form');
+        const country1Input = document.getElementById('country1-input');
+        const country2Input = document.getElementById('country2-input');
+        const countryInput = document.getElementById('country-input');
+        const compareSubmitBtn = document.getElementById('compare-submit');
+        const viewSubmitBtn = document.getElementById('view-submit');
 
 compareBtn.addEventListener('click', function() {
   compareForm.style.display = 'block';

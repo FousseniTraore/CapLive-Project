@@ -8,145 +8,125 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8fc0081383.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
   </head>
   <body>
 
-  <!-- Navigation bar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">CapLive</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="landingPage.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="About.html">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!--Create a header with a backround image-->
-  <section class="header">
-    <div class="container ">
-      <h1 style="font-size: 30px; padding-top: 15%; color: white; font-style: italic;">Hello, <br>Are you looking for the cost of living of any country?</h1>
-    </div>
-  </section>
-  <!--Form box for searching and comparing countries-->
-  <div class="container shadow-sm border rounded p-4 bg-white custom-container">
-    <div class="row options">
-      <ul>
-        <li>
-          <button id="button-comp">Compare</button>
-        </li>
-        <li>
-          <button id="button-view">View only</button>
-        </li>
-      </ul>
-    </div>
-    <div class="displayContent">
-      <div class="row justify-content-center" id="comparison-form">
-        <div class="col-sm-4">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Compare</label>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">To</label>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="form-group text-center">
-              <button type="button" class="btn btn-primary btn-lg">Compare</button>
-          </div>
+    <!-- Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">CapLive</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="landingPage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="row" id="viewOnly-form" style="display: none;">
-        <div class="col-sm-4">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Search for</label>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="form-group text-center">
-              <button type="button" class="btn btn-primary btn-lg">Search</button>
-          </div>
-        </div>
+    </nav>
+    <!--Create a header with a backround image-->
+    <section class="header">
+      <div class="container ">
+        <h1 style="font-size: 30px; padding-top: 15%; color: white; font-style: italic;">Hello, <br>Are you looking for the cost of living of any country?</h1>
       </div>
-    </div>
-  </div>
+    </section>
+    <section class="landing-content">
 
-  <!---->
-  <div class="container text-center">
-    <div>
-      <h2>What you can compare?</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, consequatur.</p>
-    </div>
-    <div class="row justify-content-center" style="padding-top: 10%;">
-      <div class="col-sm-3">
-        <div class="serviceBox">
-          <div class="serviceTitle ">
-            <i class="fa-solid fa-car-side"></i>
-          </div>
-          <div>
-            <h6>Transport</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
+        <!--Form box for searching and comparing countries-->
+      <div class="container shadow-sm border rounded p-4 bg-white custom-container">
+        <div class="row options">
+          <ul>
+            <li>
+              <button id="button-comp">Compare</button>
+            </li>
+            <li>
+              <button id="button-view">View only</button>
+            </li>
+          </ul>
         </div>
-      </div>
 
-      <div class="col-sm-3">
-        <div class="serviceBox">
-          <div class="serviceTitle ">
-            <i class="fa-solid fa-car-side"></i>
+        <div class="displayContent">
+
+          <!--Comparison button content-->
+          <div class="displaybox" id="comparison-form">
+            <div class="row justify-content-center">
+              <div class="col-sm-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="city1-input" placeholder="">
+                  <label for="floatingInput">Compare</label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="city2-input" placeholder="">
+                  <label for="floatingInput">To</label>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-4">
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-primary btn-lg" id="locate-1">Locate cities</button>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-primary btn-lg" id="compare-submit">Compare prices</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <h6>Transport</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!--Single country search content-->
+          <div class="displaybox" id="viewOnly-form" style="display: none;">
+            <div class="row justify-content-center">
+              <div class="col-sm-8">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="city-input" placeholder="">
+                  <label for="city-input">Search for</label>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-sm-4">
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-primary btn-lg" id="locate-2">Locate city</button>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-primary btn-lg" id="view-submit">Get prices</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="col-sm-3">
-        <div class="serviceBox">
-          <div class="serviceTitle ">
-            <i class="fa-solid fa-car-side"></i>
-          </div>
-          <div>
-            <h6>Transport</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
+        <!-- the result of the research-->
+      <div class="research-result" id="result-content">
+        <!--the content of all research goes here-->
       </div>
 
-      <div class="col-sm-3"> 
-        <div class="serviceBox">
-          <div class="serviceTitle ">
-            <i class="fa-solid fa-car-side"></i>
-          </div>
-          <div>
-            <h6>Transport</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </div>
+    </section>
+    
 
+    <!--Footer-->
+    <footer class="footer ">
+      <p>Built by Fousseni Traore</p>
+      <p> &copy; 2023</p>
+    </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
